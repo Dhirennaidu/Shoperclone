@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        header{
+            padding: 20px;
+            justify-content: space-around;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+        }
+        header nav{
+            font-size:16px;
+            font-weight: bold;
+            padding: 20px;
+        }
+        nav span{
+            margin-left: 20px;
+        }
+        .brand{padding: 10px;
+            font-size:30px;
+            font-weight:bold;
+        }
+        .icons{
+            padding:20px;
+        }
+        .icons span{
+            margin-left: 20px;
+            font-size:16px;
+            font-weight:bold;
+        }
+        .icons span:hover{
+            color:red;
+        }
+        article{height: 40px;
+            background-color: black;
+            color:white;
+            text-align: center;
+            padding: 10px;
+        }
+        .icons i{
+            color: orangered;
+        }
+        main{margin-top: 20px;
+            display: grid;
+            width:100%;
+            grid-template-columns: auto auto auto;
+            
+        }
+        .card1{margin: 0;
+            background-image: url("img-1.jpg");
+            width:430px;
+            height: 550px;
+            background-color: rgb(255, 255, 255);
+            display: block;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            background-repeat:no-repeat;
+            background-size: cover;
+            color:white;
+        }
+        .card2{margin: 0;
+            background-image: url("img-2.jpg");
+            width:430px;
+            height: 550px;
+            background-color: rgb(255, 255, 255);
+            display: block;
+            justify-content: center;
+            text-align: center;
+            background-repeat:no-repeat;
+            background-size: cover;
+            align-items: center;
+            color:white;
+        }
+        .card3{margin: 0;
+            background-image: url("images-3.jpg");
+            width:430px;
+            height: 550px;
+            background-color: rgb(255, 255, 255);
+            display: block;
+            justify-content: center;
+            text-align: center;
+            background-repeat:no-repeat;
+            background-size: cover;
+            align-items: center;
+            color:white;
+            
+        }
+        h1{margin-top: 50%;
+            font-size: 50px;
+        font-weight:bold;
+        }
+       button{
+    margin-top: 40%;
+      height:50px;
+      width:150px;
+      color:black;
+    }
+   section{
+         justify-content: center;
+         
+   }
+   .feuture{
+    background-color: rgb(255, 255, 255);
+    height:100px;
+    width:80%;
+    margin-left:10%;
+    border-bottom: 1px solid gray;
+    margin-top: 20px;
+    display: flex;
+    justify-content:space-evenly;
+
+   }
+   
+   .fue {
+    
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+   }
+   article i{
+    font-size:20px;
+    color:red;
+   }
+   div span{
+    font-weight: bold;
+    color:black;
+   }
+  .fue div{
+    margin-left: 60px;
+    color:gray;
+  }
+  .sentence{margin-top: 60px;
+    height:300px;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+ .sentence span{margin-top: 10px;
+    display: block;
+ }
+ .title{
+    font-size: 40px;
+    font-weight: bold;
+    
+ }
+ .text{
+    font-size:15px;
+    color:gray;
+ }
+ .tt{
+    color:gray;
+ }
+ .content-1{
+    height:400px;
+    width:100%;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+ }
+ .pick-1{margin-left: 6%;
+    width:85%;
+    height:400px;
+    background-color: rgb(255, 255, 255);
+ }
+ .pick-2{margin-left:6%;
+    margin-top: 20px;
+    width:85%;
+    height:400px;
+    background-color: rgb(255, 255, 255);
+ }
+ .left-card{float:left;
+    width:300px;
+    height:400px;
+    
+ }
+ .right-card{
+    float:right;
+    width:700px;
+    height:400px;
+    
+
+ }
+ .left-card1{float:left;
+    width:700px;
+    height:400px;
+    
+ }
+ .right-card1{margin-right: 2%;
+    float:right;
+    width:300px;
+    height:400px; 
+
+ }
+ img :hover{
+   transform: scale(1.5);
+   transition:cubic-bezier(1.5);
+ }
+ .Top-sell{
+    height:100px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top:8%;
+ }
+ .Nav span{
+    font-size:15px;
+    font-weight: bold;
+    padding-left: 20px;
+ }
+ .Nav span:hover{
+    color:rgb(232, 147, 147);
+ }
+ .product{
+    height:900px;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+ }
+ .list1{margin-left: 6%;
+    
+    width:88%;
+    height:900px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+ }
+ .pro{
+    width:260px;
+    height:400px;
+    background-color: rgb(255, 255, 255);
+
+ }
+ .photo{
+    
+    height: 300px;
+ }
+ .photo img{
+    width:260px;
+ }
+ .speci{
+    margin-top: 20px;
+ }
+ .speci i{
+    color:gray;
+ }
+ .first-1{
+   color:gray;
+ }
+ .second-1{
+   font-size:15px;
+   color:black;
+   font-weight: bold;
+ }
+ .third-1{
+    font-size:18px;
+    color:gray;
+    font-weight:bold;
+    display: flex;
+ }
+ .discover{margin-top: 30px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size:18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color:black;
+    height:150px;
+ }
+ .discover-img{
+    height:550px;
+    width:100%;
+ }
+ .discover-img img{
+    height:550px;
+    width:100%;
+ }
+ .discover1{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    height:100px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 60px;
+ }
+ .cardds{
+    height:450px;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+ }
+ 
+ .cardd{margin-left: 10%;
+    width:80%;
+    height:450px;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: auto auto auto;
+ }
+ .cardd div{
+    height: 400px;
+    border: 1px solid gray;
+    width:310px; 
+    background-color: rgb(255, 255, 255);
+ }
+ .cardd section{border-bottom: none;
+    height: 450px;
+    border: none;
+    width:310px;
+    
+    background-color: rgb(255, 255, 255);
+ }
+ .rate{
+    height:100px;
+    color:gray;
+ }
+ .rate p{
+    margin-left: 20px;
+ }
+ .rad{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+ }
+
+ .shoper{margin-top: 8%;
+    height:600px;
+    background-color: rgb(255, 253, 253);
+ }
+ .shoper-title{padding-top: 60px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size:40px;
+    font-weight: bold;
+    background-color: rgb(245, 245, 245);
+ }
+ .last{
+    margin-left: 8%;
+ }
+ .email{color:white;
+    font-size:20px;
+    height:300px;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: block;
+    padding-top:10%;
+ }
+ 
+ input[type="email"]{
+    background-color: rgb(65, 62, 62);
+    height: 60px;
+    width:300px;
+    color:white;
+    border:none;
+    
+ }
+ input[type="button"]{
+    background-color: rgb(65, 62, 62);
+    height:60px;
+    width:200px;
+    color: white;
+    border:none;
+ }
+ .foot{justify-content: center;
+    align-items: center;
+    height:600px;
+    background-color: black;
+    padding-top: 10px;
+ }
+ footer{padding-left: 10%;
+    display: grid;
+    grid-template-columns: 7fr 6fr 6fr 6fr 6fr;
+    border-bottom: 1px solid white;
+    
+ }
+ footer .footer-title{
+    font-size:15px;
+    color:white;
+    font-weight: bold;
+ }
+ .footer-title~span{
+    color:rgb(176, 169, 169);
+    display: block;
+    font-size:14px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 20px;
+ }
+ footer .footer-title1{color:white;
+    font-size:30px;
+    padding-top: 20px;
+ }
+ .footer-title1~span{
+    color:white;
+    font-size:30px;
+    padding-left: 10px;
+    padding-top: 20px;
+ }
+ .footlasts{
+    padding-top: 50px;
+ }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="brand">
+          <span>Shooper.</h1></span>
+        </div>
+        
+        <nav>
+            <span>Home</span>
+            <span>Catalog</span>
+            <span>Shop</span>
+            <span>Pages</span>
+            <span>Blog</span>
+            <span>Docs</span>
+        </nav>
+        
+        <div class="icons">
+            <span class="bi bi-search"></span>
+            <span class="bi bi-person"></span>
+            <span class="bi bi-heart"></span>
+            <span class="bi bi-cart"></span>
+            
+            <span></span>
+        </div>
+    </header>
+    <article>
+        <span><i class="bi bi-lightning-fill"></i></span>
+        <span> HAPPY HOLIDAY DEALS ON EVERYTHING </span>
+        <span><i class="bi bi-lightning-fill"></i></span>
+    </article>
+    <section>
+        <main>
+          <div class="card1">
+            <h1>Women</h1>
+                
+               <button>Shop Women<span class="bi bi-arrow-right"></span></button>
+             
+          </div>
+          <div class="card2">
+            <h1>Men</h1>
+       
+               <button>Shop Women<span class="bi bi-arrow-right"></span></button>
+            
+          </div>
+          <div class="card3">
+             
+                <h1>Kids</h1>
+            <button>Shop Women<span class="bi bi-arrow-right"></span></button>
+             
+          </div>
+         
+        </main>
+        <div class="feuture">
+            <div class="fue">
+                <span><i class="bi bi-truck"></i></span><div><span>FREE SHIPING</span>
+                <p>Return money within 30 days</p></div>
+            </div>
+            <div class="fue">
+                <span><i class="bi bi-arrow-repeat"></i></span><div><span>FREE RETURNS</span>
+                <p>Return money within 30 days</p></div>
+            </div>
+            <div class="fue">
+                <span><i class="bi bi-lock"></i></span><div><span>SECURE SHOPPING</span>
+                <p>You're in safe hands</p></div>
+            </div>
+            <div class="fue">
+                <span><i class="bi bi-tag"></i></span><div><span>OVER 10,000 STYLES</span>
+                <p>We have everything you need</p></div>
+            </div>
+         </div>
+         <div class="sentence">
+        <span><div class="tt">NEW COLLECTION</div></span>
+<span><div class="title">Best Picks 2019</div></span>
+<span><div class="text">Appear, dry there darkness they're seas, dry waters thing fly midst. Beast,</div></span>
+<span><div class="text">above fly brought Very green.</div></span>
+         </div>
+
+         <div class="content-1">
+         <div class="pick-1">
+          <a href=""><div class="left-card">
+             <img src="Card-1.jpg">
+           </div></a>
+           <a href=""><div class="right-card">
+             <img src="Card-2.jpg">
+           </div></a>
+           </div>
+           </div>
+           <div class="content-1">
+           <div class="pick-2">
+            <a href=""><div class="left-card1">
+              <img src="Card-3.jpg">
+            </div></a>
+            <a href=""><div class="right-card1">
+              <img src="Card-4.jpg">
+            </div></a>
+            </div>
+         </div>
+
+         <div class="Top-sell">
+            Top month Sellers
+            <div class="Nav">
+                <span>Women</span><span>men</span><span>Kids</span>
+            </div>
+         </div>
+
+         <div class="product">
+            <div class="list1">
+           <div class="pro">
+             <div class="photo">
+                <img src="pro1.jpg">
+             </div>
+             <div class="speci">
+                <p class="fierst-1">Shose</p>
+                <p class="second-1">Leather mid-heel Sandals</p>
+                <p class="third-1"><i class="bi bi-currency-dollar"></i>127.00</p>
+             </div>
+           </div>
+           <div class="pro">
+             <div class="photo">
+              <img src="pro2.jpg">
+             </div>
+             <div class="speci">
+                <p class="fierst-1">Dresses</p>
+                <p class="second-1">Cotton floral print Dress</p>
+                <p class="third-1"><i class="bi bi-currency-dollar"></i>500.00</p>
+             </div>
+           </div>
+           <div class="pro">
+             <div class="photo">
+              <img src="pro3.jpg">
+             </div>
+             <div class="speci">
+                <p class="fierst-1">Shose</p>
+                <p class="second-1">Leather Sneakers</p>
+                <p class="third-1"><del><i class="bi bi-currency-dollar"></i>120.00</del><span><i class="bi bi-currency-dollar" style="color:red"></i>80.00</span></p>
+             </div>
+           </div>
+           <div class="pro">
+             <div class="photo">
+               <img src="pro4.jpg">
+             </div>
+             <div class="speci">
+                <p class="fierst-1">Tops</p>
+                <p class="second-1">Cropped cotton Top</p>
+                <p class="third-1"><i class="bi bi-currency-dollar"></i>434.00</p>
+             </div>
+           </div>
+           <div class="pro">
+            <div class="photo">
+             <img src="pro5.jpg">
+            </div>
+            <div class="speci">
+                <p class="fierst-1">Dresses</p>
+                <p class="second-1">Floral print midi Dress</p>
+                <p class="third-1"><i class="bi bi-currency-dollar"></i>789.00</p>
+            </div>
+          </div>
+          <div class="pro">
+            <div class="photo">
+             <img src="pro6.jpg">
+            </div>
+            <div class="speci">
+                <p class="fierst-1">Bags</p>
+                <p class="second-1">Suede cross body Bag</p>
+                <p class="third-1"><del><i class="bi bi-currency-dollar"></i>180.00</del><span><i class="bi bi-currency-dollar" style="color:red"></i>120.00</span></p>
+            </div>
+          </div>
+          <div class="pro">
+            <div class="photo">
+             <img src="pro7.jpg">
+            </div>
+            <div class="speci">
+                <p class="fierst-1">Skirts</p>
+                <p class="second-1">Printed A-line Skirt</p>
+                <p class="third-1"><i class="bi bi-currency-dollar"></i>856.00</p>
+            </div>
+          </div>
+          <div class="pro">
+            <div class="photo">
+              <img src="pro8.jpg">
+            </div>
+            <div class="speci">
+                <p class="fierst-1">Shose</p>
+                <p class="second-1">Heel strappy Sandals</p>
+                <p class="third-1"><i class="bi bi-currency-dollar"></i>90.00</p>
+            </div>
+          </div>
+           </div>
+         </div>
+
+         <div class="discover">
+            <u>Discover more</u>
+         </div>
+         <div class="discover-img">
+            <img src="Cardbig.jpg">
+         </div>
+         <div class="discover1">
+            <p><font color="gray">WHAT BUYERS SAY</font></p><br>
+           <p><font color="black" size="5">Latest buyers Reviews</font></p>
+         </div>
+         <div class="cardds">
+            <div class="cardd">
+           <div>
+             <div class="rate">
+              <img src="crad-1.jpg"><br><br>
+              <p>From creepeth said moved given divide</p>
+                <p> make multiply of him shall itself also</p>
+                <p>above second doesn't unto created</p>
+                <p>saying land herb sea midst nignt</p>
+                <p>wherein.</p>
+                <br>
+                <br>
+                <p>Login Edwards,01 jun 2019</p>
+              </div>
+            
+           </div>
+           <section class="main1">
+            <div class="rate">
+            <img src="card2.jpg"><br><br><br>
+            <p>From creepeth said moved given divide</p>
+            <p> make multiply of him shall itself also</p>
+            <p>above second doesn't unto created</p>
+            <p>saying land herb sea midst nignt</p>
+            <p> make multiply of him shall itself also</p>
+            
+            <p>wherein.</p>
+            <br>
+            <br>
+            <p>Login Edwards,01 jun 2019</p>
+            </div>
+            
+           </section>
+           <div>
+             <div class="rate">
+            <img src="card3.jpg">
+            <br><br>
+                <p>From creepeth said moved given divide</p>
+                <p> make multiply of him shall itself also</p>
+                <p>above second doesn't unto created</p>
+                <p>saying land herb sea midst nignt</p>
+                <p>wherein.</p>
+                <br>
+                <br>
+                <p>Login Edwards,01 jun 2019</p>
+             </div>
+             
+           </div>
+           </div>
+           </div>
+        <div class="rad">
+            <form>
+           <input type="radio" >
+           <input type="radio" >
+           <input type="radio" >
+           <input type="radio" >
+           </form>
+        </div>
+
+        <div class="shoper">
+         <div class="shoper-title">
+            <p>@shopper</p>
+            <p><font color="gray" size="4">Appear, dry there darkness they're seas, dry waters.</p>
+         </div>
+
+         <div class="last">
+            <img src="last.jpg">
+         </div>
+         <div class="last">
+            <img src="last2.jpg">
+         </div>
+        </div>
+
+    </section><br><br>
+    <div class="foot">
+    <div class="email">
+        <div class="mess"><p>Want style Ideas and Treats?</p></div>
+        <span><input type="email" placeholder="Enter Email *">
+        <input type="button" value="Subscribe">Subscribe</button></span>
+    </div>
+    <footer>
+       <div>
+          <div class="footer-title1">Shoper.</div>
+          <span class="bi bi-facebook"></span>
+          <span class="bi bi-instagram"></span>
+          <span class="bi bi-twitter"></span>
+          <span class="bi bi-youtube"></span>
+       </div>
+       <div>
+        <div class="footer-title">SUPPORT</div>
+        <span>Contact Us</span>
+        <span>FAQs</span>
+        <span>Size Guide</span>
+        <span>Shipping & Returns</span>
+       </div>
+       <div>
+        <div class="footer-title">SHOP</div>
+        <span>Men's Shopping</span>
+        <span>Women's Shopping</span>
+        <span>Kids' Shopping</span>
+        <span>Discounts</span>
+       </div>
+       <div>
+         <div class="footer-title">COMPANY</div>
+         <span>Our Story</span>
+         <span>Careers</span>
+         <span>Terms & Conditions</span>
+         <span>Privacy & Cookie policy</span>
+       </div>
+       <div>
+        <div class="footer-title">CONTACT</div>
+        <span>1-202-555-0105</span>
+        <span>1-202-555-0106</span>
+        <span>help@shopper.com</span>
+       </div>
+    </footer>
+    <div class="footlasts">
+        <img src="footlast.jpg" style="width:100%">
+       </div>
+    </div>
+</body>
+</html>
